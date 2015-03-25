@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finddreams.adbanner.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical" >
+
+        <com.finddreams.bannerview.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.finddreams.bannerview.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>
